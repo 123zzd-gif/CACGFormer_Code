@@ -1,0 +1,2 @@
+from .point_transformer_v3m1_base_multiscale_2fenlei_learning_weight_keshihua_normals_3jihetezheng_zhuyili import *
+#from .point_transformer_v3m1_base import *
