@@ -1,10 +1,10 @@
-Category-aware and Centroid-Guided Point Transformer for Precise 3D Ear Region Segmentation
+# Category-aware and Centroid-Guided Point Transformer for Precise 3D Ear Region Segmentation
 
 <img width="553" height="284" alt="image" src="https://github.com/user-attachments/assets/92f5298f-8747-423c-8a71-f05d10f6676d" />
 
-Installation
+## Installation
 
-Requirements
+### Requirements
 
 Ubuntu: 20.04 and above
 
@@ -12,7 +12,7 @@ CUDA: 11.6 and above
 
 PyTorch: 1.12.0 and above
 
-Environment
+### Environment
 
 Base environment
 
@@ -42,3 +42,10 @@ pip install spconv-cu118
 
 pip install open3d
 
+## Train
+cd Pointcept\tools
+python train.py --config-file PointTransformerV3_1/Pointcept/configs/s3dis/semseg-pt-v3m1-1-rpe_ear_multiscale_increase16qvyv_weight_keshihua.py
+
+## Test
+cd Pointcept\tools
+python test.py   --config-file PointTransformerV3_1/Pointcept/configs/s3dis/semseg-pt-v3m1-1-rpe_ear_multiscale_increase16qvyv_weight_keshihua.py   --options weight=/model/model_best.pth
