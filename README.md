@@ -43,9 +43,13 @@ pip install spconv-cu118
 pip install open3d
 
 ## Train
+
 cd Pointcept\tools
+
 python train.py --config-file PointTransformerV3_1/Pointcept/configs/s3dis/semseg-pt-v3m1-1-rpe_ear_multiscale_increase16qvyv_weight_keshihua.py
 
 ## Test
+
 cd Pointcept\tools
+
 python test.py   --config-file PointTransformerV3_1/Pointcept/configs/s3dis/semseg-pt-v3m1-1-rpe_ear_multiscale_increase16qvyv_weight_keshihua.py   --options weight=/model/model_best.pth
